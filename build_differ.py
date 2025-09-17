@@ -57,8 +57,8 @@ def main():
     dist_dir = "./src/python_redlines/dist/"
 
     # Build for Linux x64
-    # print("Building for Linux x64...")
-    # run_command('dotnet publish ./csproj -c Release -r linux-x64 --self-contained')
+    print("Building for Linux x64...")
+    run_command('dotnet publish ./csproj -c Release -r linux-x64 --self-contained')
 
     # Build for Linux ARM64
     print("Building for Linux ARM64...")
@@ -81,8 +81,8 @@ def main():
     # run_command('dotnet publish ./csproj -c Release -r osx-arm64 --self-contained')
 
     # Compress the Linux x64 build
-    # linux_x64_build_dir = './csproj/bin/Release/net8.0/linux-x64'
-    # compress_files(linux_x64_build_dir, f"{dist_dir}/linux-x64-{version}.tar.gz")
+    linux_x64_build_dir = './csproj/bin/Release/net8.0/linux-x64'
+    compress_files(linux_x64_build_dir, f"{dist_dir}/linux-x64-{version}.tar.gz")
 
     # Compress the Linux ARM64 build
     linux_arm64_build_dir = './csproj/bin/Release/net8.0/linux-arm64'
