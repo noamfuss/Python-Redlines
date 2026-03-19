@@ -2,7 +2,7 @@ import os
 import pytest
 from unittest.mock import patch, MagicMock
 
-from python_redlines.engines import XmlPowerToolsEngine
+from python_redlines.engines import ClippitEngine
 
 
 def load_docx_bytes(file_path):
@@ -22,7 +22,7 @@ def modified_docx():
 
 def test_run_redlines_with_real_files(original_docx, modified_docx):
     # Create an instance of the wrapper
-    wrapper = XmlPowerToolsEngine()
+    wrapper = ClippitEngine()
 
     author_tag = "TestAuthor"
 

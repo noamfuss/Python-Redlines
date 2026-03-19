@@ -2,6 +2,6 @@
 #
 # SPDX-License-Identifier: MIT
 
-from .engines import XmlPowerToolsEngine, DocxodusEngine, BaseEngine
+from .engines import ClippitEngine, DocxodusEngine, BaseEngine
 
-__all__ = ["XmlPowerToolsEngine", "DocxodusEngine", "BaseEngine"]
+__all__ = ["ClippitEngine", "DocxodusEngine", "BaseEngine"]

@@ -158,7 +158,7 @@ class BaseEngine(object):
         return temp_file.name
 
 
-class XmlPowerToolsEngine(BaseEngine):
+class ClippitEngine(BaseEngine):
     DIST_DIR_NAME = 'dist'
     BIN_DIR_NAME = 'bin'
     BINARY_BASE_NAME = 'redlines'

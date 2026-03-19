@@ -94,7 +94,7 @@ def main():
     version = get_version()
     print(f"Version: {version}")
 
-    # Build the XmlPowerTools engine (original)
+    # Build the Clippit engine (original)
     build_engine('./csproj', './src/python_redlines/dist/', version)
 
     # Build the Docxodus engine (if submodule is available)
